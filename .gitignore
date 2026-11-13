@@ -1,0 +1,28 @@
+# Run logs of Import-SsrsSubscriptions.ps1 (they contain e-mail addresses)
+Logs/
+*.log
+
+# Only the synthetic distributable workbook belongs in Git.
+*.xlsx
+!Subscriptions.xlsx
+
+# Excel lock files
+~$*.xlsx
+
+# Secrets
+.env
+.env.*
+*.pfx
+*.pem
+*.key
+*.snk
+
+# Editors and OS files
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+Thumbs.db
+desktop.ini
+.DS_Store
